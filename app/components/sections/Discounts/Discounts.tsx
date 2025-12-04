@@ -3,7 +3,7 @@ import styles from "./Discounts.module.css";
 
 function Discounts() {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <h1 className={styles.title}>Скидки</h1>
       <div className={styles.products}>
         <ProductCard
@@ -25,7 +25,7 @@ function Discounts() {
           link={"/"}
         />
       </div>
-    </div>
+    </section>
   )
 }
 

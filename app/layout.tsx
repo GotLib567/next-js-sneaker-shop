@@ -3,6 +3,7 @@ import "./styles/globals.css";
 import Navbar from "@/app/components/Navbar/Navbar";
 import styles from "./Layout.module.css";
 import {Montserrat} from "next/font/google";
+import Footer from "@/app/components/Footer/Footer";
 
 const MontserratSans = Montserrat({
   variable: "--font-sans",
@@ -24,10 +25,16 @@ export default function RootLayout({
       <body
         className={`${MontserratSans.variable}`}
       >
+        <Navbar />
+
         <div className={styles.mainContainer}>
-          <Navbar />
           {children}
         </div>
+
+        <Footer
+          phone="+7 (999) 999-99-99"
+          email="test@test.com"
+        />
       </body>
     </html>
   );

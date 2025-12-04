@@ -4,9 +4,9 @@ import Discounts from "@/app/components/sections/Discounts/Discounts";
 
 export default function Home() {
   return (
-    <div className={styles.root}>
+    <main className={styles.root}>
       <BannerSlider />
       <Discounts />
-    </div>
+    </main>
   );
 }
