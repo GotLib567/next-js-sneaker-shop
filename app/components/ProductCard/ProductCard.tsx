@@ -16,12 +16,15 @@ function ProductCard({ label, image, link, price }: ProductCardProps) {
   return (
     <div className={styles.container}>
       <Link href={link} >
-        <Image
-          src={image}
-          alt="product card image"
-          width={400}
-          height={400}
-        />
+        <div className={styles.imageWrapper}>
+          <Image
+            src={image}
+            alt={label}
+            fill
+            className={styles.image}
+            sizes="(min-width: 1024px) 30vw, 100vw"
+          />
+        </div>
         <div className={styles.label}>{label}</div>
       </Link>
       <div className={styles.priceContainer}>

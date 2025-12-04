@@ -7,8 +7,8 @@ function BannerSlider() {
       <Image
         src="/assets/01.jpg"
         alt="banner slider"
-        width={1200}
-        height={430}
+        width={1360}
+        height={450}
       />
     </div>
   )
