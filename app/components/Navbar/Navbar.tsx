@@ -21,40 +21,42 @@ const ACTION_ITEMS = [
 function Navbar() {
   return (
     <header className={styles.root}>
-      <Link href="/" className={styles.logoWrapper}>
-        <Image
-          src="/assets/logo.svg"
-          alt="Logo"
-          width={60}
-          height={60}
-          priority
-          className={styles.logo}
-        />
-      </Link>
-      <nav className={styles.nav} aria-label="Основная навигация">
-        <ul className={styles.menu}>
-          {
-            MENU_ITEMS.map(({ href, label }) => (
-              <li key={href} className={styles.menuItem} >
-                <Link href={href} className={styles.menuLink} >
-                  {label}
-                </Link>
-              </li>
-            ))
-          }
-        </ul>
-      </nav>
-      <div className={styles.actions}>
-        {ACTION_ITEMS.map(({ Icon, href, label }) => (
-          <Link
-            key={label}
-            href={href}
-            className={styles.actionButton}
-            aria-label={label}
-          >
-            <Icon className={styles.actionIcon} />
-          </Link>
-        ))}
+      <div className={styles.container}>
+        <Link href="/" className={styles.logoWrapper}>
+          <Image
+            src="/assets/logo.svg"
+            alt="Logo"
+            width={60}
+            height={60}
+            priority
+            className={styles.logo}
+          />
+        </Link>
+        <nav className={styles.nav} aria-label="Основная навигация">
+          <ul className={styles.menu}>
+            {
+              MENU_ITEMS.map(({ href, label }) => (
+                <li key={href} className={styles.menuItem} >
+                  <Link href={href} className={styles.menuLink} >
+                    {label}
+                  </Link>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+        <div className={styles.actions}>
+          {ACTION_ITEMS.map(({ Icon, href, label }) => (
+            <Link
+              key={label}
+              href={href}
+              className={styles.actionButton}
+              aria-label={label}
+            >
+              <Icon className={styles.actionIcon} />
+            </Link>
+          ))}
+        </div>
       </div>
     </header>
   )

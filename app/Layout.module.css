@@ -1,5 +1,5 @@
 .mainContainer {
-    max-width: 1360px;
+    max-width: var(--layout-max-width);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 72px 20px 0;
 }

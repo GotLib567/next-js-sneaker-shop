@@ -5,6 +5,9 @@
     --foreground: #171717;
     --muted: #8c8c8c;
 
+    --layout-max-width: 1360px;
+    --layout-padding-x: 20px;
+
     --font-title: 32px;
     --font-xl: 24px;
     --font-lg: 18px;
