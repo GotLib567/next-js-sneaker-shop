@@ -1,0 +1,70 @@
+.root {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+/* Лого */
+
+.logoLink {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+}
+
+/* Меню */
+
+.nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menuItem { }
+
+.menuLink {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.15s ease;
+}
+
+.menuLink:hover {
+    color: #555;
+}
+
+/* Кнопки действий (иконки справа) */
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.actionButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.actionButton:hover {
+    background-color: #f3f3f3;
+}
+
+.actionIcon {}
