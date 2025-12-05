@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <header className={styles.root}>
       <div className={styles.container}>
-        <Link href="/" className={styles.logoWrapper}>
+        <Link href="/public" className={styles.logoWrapper}>
           <Image
             src="/assets/logo.svg"
             alt="Logo"

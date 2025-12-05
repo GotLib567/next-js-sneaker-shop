@@ -1,9 +1,9 @@
 import type {Metadata, Viewport} from "next";
 import "./styles/globals.css";
-import Navbar from "@/app/components/Navbar/Navbar";
+import Navbar from "@/src/widgets/layout/Navbar/Navbar";
 import styles from "./Layout.module.css";
 import {Montserrat} from "next/font/google";
-import Footer from "@/app/components/Footer/Footer";
+import Footer from "@/src/widgets/layout/Footer/Footer";
 
 const MontserratSans = Montserrat({
   variable: "--font-sans",

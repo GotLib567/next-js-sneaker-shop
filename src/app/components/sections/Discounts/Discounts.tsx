@@ -1,4 +1,4 @@
-import ProductCard from "@/app/components/ProductCard/ProductCard";
+import ProductCard from "@/src/entities/product/ProductCard/ProductCard";
 import styles from "./Discounts.module.css";
 
 function Discounts() {
