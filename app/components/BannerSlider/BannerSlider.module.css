@@ -1,0 +1,10 @@
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 33%;
+    overflow: hidden;
+}
+
+.image {
+    object-fit: contain;
+}

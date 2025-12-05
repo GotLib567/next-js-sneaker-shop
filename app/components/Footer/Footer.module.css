@@ -41,6 +41,15 @@
     gap: 20px;
 }
 
+.menuHeader {
+    font-weight: 300;
+}
+
+.menuItem {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
 .socialmedias {
     display: flex;
     gap: 10px;
@@ -50,4 +59,29 @@
     font-weight: 400;
     color: var(--muted);
     font-size: var(--font-sm);
+}
+
+@media (max-width: 800px) {
+    .root {
+        margin-top: 40px;
+    }
+
+    .containerWrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copyright {
+        align-items: center;
+    }
+
+    .menu {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts {
+        margin-top: 20px;
+    }
 }

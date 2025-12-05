@@ -22,28 +22,29 @@ function Footer({ phone, email }: FooterProps) {
           />
           <span className={styles.copyrightInfo}>sneaker store 2025</span>
         </div>
-        <nav>
-          <div>Каталог</div>
+        <nav className={styles.menu}>
+          <div className={styles.menuHeader}>Каталог</div>
           <div>
-            <Link href="/">Новинки</Link>
-            <Link href="/">Товары для мужчин</Link>
-            <Link href="/">Товары для женщин</Link>
+            <Link href="/" className={styles.menuItem}>Новинки</Link>
+            <Link href="/" className={styles.menuItem}>Товары для мужчин</Link>
+            <Link href="/" className={styles.menuItem}>Товары для женщин</Link>
+            <Link href="/" className={styles.menuItem}>Баскетбол</Link>
           </div>
         </nav>
-        <nav>
-          <div>Информация</div>
+        <nav className={styles.menu}>
+          <div className={styles.menuHeader}>Информация</div>
           <div>
-            <Link href="/">Оплата и доставка</Link>
-            <Link href="/">Выбор размера</Link>
-            <Link href="/">Обмен и возврат</Link>
-            <Link href="/">Вопросы-ответы</Link>
+            <Link href="/" className={styles.menuItem}>Оплата и доставка</Link>
+            <Link href="/" className={styles.menuItem}>Выбор размера</Link>
+            <Link href="/" className={styles.menuItem}>Обмен и возврат</Link>
+            <Link href="/" className={styles.menuItem}>Вопросы-ответы</Link>
           </div>
         </nav>
         <div className={styles.contacts}>
           <div>
-            <div>Контакты</div>
-            <Link href="/">{phone}</Link>
-            <Link href="/">{email}</Link>
+            <div className={styles.menuHeader}>Контакты</div>
+            <Link href="/" className={styles.menuItem}>{phone}</Link>
+            <Link href="/" className={styles.menuItem}>{email}</Link>
           </div>
           <div className={styles.socialmedias}>
             <Link href="/" className={styles.imageWrapper}>

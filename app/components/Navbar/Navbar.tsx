@@ -7,8 +7,8 @@ const MENU_ITEMS = [
   { label: "Новинки", href: "/new" },
   { label: "Мужчинам", href: "/product-category/man" },
   { label: "Женщинам", href: "/product-category/woman" },
-  { label: "Бренды", href: "/product-category/brands" },
-  { label: "Информация", href: "/product-category/info" },
+  { label: "Бренды", href: "/brands" },
+  { label: "Информация", href: "/info" },
 ] as const;
 
 const ACTION_ITEMS = [
