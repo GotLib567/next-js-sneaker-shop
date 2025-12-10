@@ -13,7 +13,7 @@ function Footer({ phone, email }: FooterProps) {
       <div className={styles.containerWrap}>
         <div className={styles.copyright}>
           <Image
-            src="/assets/logo.svg"
+            src="/images/logo.svg"
             alt="Logo"
             width={60}
             height={60}
@@ -49,21 +49,21 @@ function Footer({ phone, email }: FooterProps) {
           <div className={styles.socialmedias}>
             <Link href="/public" className={styles.imageWrapper}>
               <Image
-                src="/assets/inst-icon.svg"
+                src="/images/inst-icon.svg"
                 fill
                 alt="socialmedia icon"
               />
             </Link>
             <Link href="/public" className={styles.imageWrapper}>
               <Image
-                src="/assets/tg-icon.svg"
+                src="/images/tg-icon.svg"
                 fill
                 alt="socialmedia icon"
               />
             </Link>
             <Link href="/public" className={styles.imageWrapper}>
               <Image
-                src="/assets/vk-icon.svg"
+                src="/images/vk-icon.svg"
                 fill
                 alt="socialmedia icon"
               />

@@ -1,0 +1,47 @@
+.wrapper {
+    display: grid;
+    gap: 12px;
+}
+
+.mainImage {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    border: none;
+    background: var(--muted-background);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 8px;
+}
+
+.thumbnailButton {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    background: none;
+    cursor: pointer;
+}
+
+.thumbnailImage {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background: var(--muted-background);
+}
+
+.thumbnailButton.active {
+    border-color: var(--foreground);
+}

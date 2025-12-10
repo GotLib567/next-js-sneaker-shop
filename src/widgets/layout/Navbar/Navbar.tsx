@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
-import {Heart, Search, ShoppingCart, UserRound} from "lucide-react";
+import { Heart, Search, ShoppingCart, UserRound } from "lucide-react";
 
 const MENU_ITEMS = [
   { label: "Новинки", href: "/new" },
@@ -22,9 +22,9 @@ function Navbar() {
   return (
     <header className={styles.root}>
       <div className={styles.container}>
-        <Link href="/public" className={styles.logoWrapper}>
+        <Link href="/" className={styles.logoWrapper}>
           <Image
-            src="/assets/logo.svg"
+            src="/images/logo.svg"
             alt="Logo"
             width={60}
             height={60}

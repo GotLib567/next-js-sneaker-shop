@@ -1,6 +1,6 @@
 import styles from "./Home.module.css";
-import BannerSlider from "@/src/app/components/BannerSlider/BannerSlider";
-import Discounts from "@/src/app/components/sections/Discounts/Discounts";
+import BannerSlider from "@/src/entities/BannerSlider/BannerSlider";
+import Discounts from "@/src/entities/Discounts/Discounts";
 
 export default function Home() {
   return (

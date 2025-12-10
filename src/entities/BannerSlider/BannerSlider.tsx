@@ -6,7 +6,7 @@ function BannerSlider() {
     <div className={styles.root}>
       <div className={styles.imageWrapper}>
         <Image
-          src="/assets/01.jpg"
+          src="/images/banner-1.jpg"
           alt="banner slider"
           fill
           className={styles.image}

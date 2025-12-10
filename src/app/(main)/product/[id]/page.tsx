@@ -1,5 +1,6 @@
-import Image from 'next/image';
-
+import { sneakers } from '@/src/mock';
+import ImageSlider from '@/src/entities/ImageSlider/ImageSlider';
+import styles from './ProductPage.module.css';
 
 interface Sneaker {
     id: string;
@@ -14,23 +15,24 @@ interface Sneaker {
     inStock: boolean;
 }
 
-const mockSneaker: Sneaker = {
-    id: '1',
-    name: 'Air Max Pro',
-    brand: 'Nike',
-    price: 129.99,
-    image: '/images/sneaker-1.jpg',
-    description: 'Premium athletic sneaker with advanced cushioning technology for all-day comfort.',
-    sizes: [6, 7, 8, 9, 10, 11, 12, 13],
-    colors: ['Black', 'White', 'Blue', 'Red'],
-    rating: 4.8,
-    inStock: true,
-};
+export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const product = sneakers.find((sneaker: Sneaker) => sneaker.id === id);
 
-export default function ProductPage({ id }: { id: string }) {
+    if (!product) {
+        return <div>Product not found</div>;
+    }
+
     return (
-        <div>
-            <Image src={mockSneaker.image} alt={mockSneaker.name} width={400} height={400} />
-        </div>
+        <section className={styles.root}>
+            <div className={styles.slider}>
+                <ImageSlider />
+            </div>
+            <div className={styles.summary}>
+                <h1 className={styles.label}>{product.name}</h1>
+                <p className={styles.price}>${product.price}</p>
+                <p>{product.description}</p>
+            </div>
+        </section>
     );
 }

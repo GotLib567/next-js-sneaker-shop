@@ -1,0 +1,27 @@
+.root {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.slider {
+    flex: 1 1 50%;
+    min-width: 320px;
+    max-width: 560px;
+}
+
+.summary {
+    flex: 1 1 45%;
+    min-width: 280px;
+    display: grid;
+    gap: 12px;
+}
+
+.label {
+    font-size: var(--font-title);
+    font-weight: 600;
+    margin-bottom: 8px;
+}

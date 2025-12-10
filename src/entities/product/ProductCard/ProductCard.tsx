@@ -28,7 +28,7 @@ function ProductCard({ label, image, link, price }: ProductCardProps) {
         <div className={styles.label}>{label}</div>
       </Link>
       <div className={styles.priceContainer}>
-        <span className={styles.price}>{price} ₽</span>
+        <span className={styles.price}>{price} $</span>
       </div>
     </div>
   );
