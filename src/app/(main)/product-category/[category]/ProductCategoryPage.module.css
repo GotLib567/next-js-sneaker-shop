@@ -1,0 +1,10 @@
+.root {
+    margin-top: 40px;
+}
+
+.categoryTitle {
+    font-size: var(--font-title);
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
