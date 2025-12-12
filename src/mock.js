@@ -6,7 +6,7 @@ export const sneakers = [
         price: 129.99,
         image: '/images/sneaker-1.jpg',
         description:
-            'Premium athletic sneaker with advanced cushioning technology for all-day comfort.',
+            'Кроссовки New Balance 530 «White Silver Navy» — стильный и универсальный вариант обуви. Эти кроссовки с преимущественно белым верхом излучают чистую и вневременную эстетику. Серебряные и темно-синие акценты придают дизайну изысканность и контрастные элементы. Эти кроссовки, изготовленные из высококачественных материалов, обеспечивают комфорт и долговечность для повседневного ношения. Кроссовки New Balance 530 «White Silver Navy» сочетают в себе классический дизайн с современными деталями, что делает их универсальным выбором для любого повседневного или спортивного образа.',
         sizes: [6, 7, 8, 9, 10, 11, 12, 13],
         colors: ['Black', 'White', 'Blue', 'Red'],
         rating: 4.8,
@@ -97,7 +97,7 @@ export const sneakers = [
         price: 89.99,
         image: '/images/sneaker-2.jpg',
         description:
-            'Updated high-top classic with reinforced canvas, cushy insole, and bold contrast stitching.',
+            'Updated high-top classic with reinforced canvas, cushy insole, and bold contrast stitching. Updated high-top classic with reinforced canvas, cushy insole, and bold contrast stitching.',
         sizes: [6, 7, 8, 9, 10, 11, 12, 13],
         colors: ['Black', 'White', 'Rust'],
         rating: 4.2,

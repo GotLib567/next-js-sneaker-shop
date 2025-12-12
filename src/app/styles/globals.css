@@ -6,6 +6,9 @@
     --muted: #787878;
     --muted-background: #f2f2f3;
     --border-color: #434343;
+    --border-color-light: #d3d3d3;
+    --original: #00c23a;
+    --primary: #007bff;
 
     --layout-max-width: 1360px;
     --layout-padding-x: 20px;

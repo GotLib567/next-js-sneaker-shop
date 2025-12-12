@@ -1,4 +1,6 @@
 .root {
+    width: 100%;
+    box-sizing: border-box;
     padding: 20px;
     margin-top: 20px;
     display: flex;
@@ -9,13 +11,18 @@
 
 .slider {
     flex: 1 1 50%;
-    min-width: 320px;
+    width: 100%;
+    min-width: 280px;
     max-width: 560px;
+    box-sizing: border-box;
+    min-inline-size: 0;
 }
 
 .summary {
-    flex: 1 1 45%;
-    min-width: 280px;
+    flex: 1 1 420px;
+    width: min(100%, 520px);
+    min-width: 0;
+    max-width: 720px;
     display: grid;
     gap: 12px;
 }
@@ -24,4 +31,131 @@
     font-size: var(--font-title);
     font-weight: 600;
     margin-bottom: 8px;
+}
+
+.contentBox {
+    margin-top: 20px;
+}
+
+.priceBox {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: var(--font-xl);
+    font-weight: 400;
+    color: var(--muted);
+}
+
+.original {
+    color: var(--original);
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.boxTitle {
+    font-size: var(--font-xl);
+    font-weight: 600;
+    margin: 20px 0
+}
+
+.miniBoxTitle {
+    font-size: var(--font-base);
+    font-weight: 500;
+}
+
+.description {
+    line-height: 1.5;
+}
+
+.articul {
+    margin-top: 20px;
+}
+
+/* Sizes Table */
+
+.sizesTable {
+    display: flex;
+    gap: 12px;
+    row-gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.sizeButton {
+    padding: 8px 24px;
+    border: 1px solid var(--border-color-light);
+    background: var(--background);
+    cursor: pointer;
+}
+
+.sizeContent {
+    height: 50px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sizeLabel {
+    font-size: var(--font-md);
+    font-weight: 600;
+}
+
+/* Buttons */
+
+.btnContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.btnAddToCart {
+    height: 46px;
+    width: 100%;
+    border: none;
+    background: var(--foreground);
+    color: var(--background);
+    font-size: var(--font-md);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btnAddToCart:hover {
+    background: var(--primary);
+    transition: all 0.3s ease-in-out;
+}
+
+.btnBuyNow {
+    height: 46px;
+    width: 100%;
+    border: none;
+    background: var(--background);
+    border: 1px solid var(--border-color-light);
+    color: var(--foreground);
+    font-size: var(--font-md);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btnBuyNow:hover {
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.btnFav {
+    display: block;
+    width: 100%;
+    max-width: 48px;
+    height: 48px;
+    cursor: pointer;
+    background: var(--muted-background);
+    color: var(--foreground);
+    font-size: var(--font-md);
+    border: 0;
+    cursor: pointer;
 }
