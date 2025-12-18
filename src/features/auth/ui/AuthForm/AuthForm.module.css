@@ -1,0 +1,38 @@
+.fields {
+    display: block;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid var(--muted);
+    margin-bottom: 12px;
+}
+
+.label {
+    display: block;
+    font-size: var(--font-sm);
+    color: var(--muted);
+    margin-bottom: 10px;
+}
+
+.formBtns {
+    margin-top: 20px;
+}
+
+.registerBtn {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    padding: 8px;
+    color: #fff;
+    cursor: pointer;
+    background: #18181B;
+}

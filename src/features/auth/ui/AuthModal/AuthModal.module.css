@@ -1,0 +1,42 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 440px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    box-sizing: border-box;
+    padding: 48px 32px 32px 32px;
+    background-color: var(--background);
+    color: #2d2d2d;
+    border: 1px solid #CACACE;
+    border-radius: 4px;
+}
+
+.title {
+    font-size: var(--font-title);
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 765px) {
+    .container {
+        width: 100%;
+        max-width: 95%;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        font-size: var(--font-xl);
+    }
+}

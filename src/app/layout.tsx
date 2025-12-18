@@ -4,6 +4,7 @@ import Navbar from "@/src/widgets/layout/Navbar/Navbar";
 import styles from "./Layout.module.css";
 import { Montserrat } from "next/font/google";
 import Footer from "@/src/widgets/layout/Footer/Footer";
+import AuthModal from "../features/auth/ui/AuthModal/AuthModal";
 
 const MontserratSans = Montserrat({
   variable: "--font-sans",
@@ -35,6 +36,8 @@ export default function RootLayout({
         <div className={styles.mainContainer}>
           {children}
         </div>
+
+        <AuthModal />
 
         <Footer
           phone="+7 (999) 999-99-99"
