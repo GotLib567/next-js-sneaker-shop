@@ -29,6 +29,13 @@
     margin-bottom: 40px;
 }
 
+.cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 765px) {
     .container {
         width: 100%;
