@@ -8,10 +8,10 @@ function AuthModal() {
   const { close } = useAuthModal();
 
   return (
-    <div className={styles.overlay}>
-        <div className={styles.container}>
+    <div className={styles.overlay} onClick={close}>
+        <div className={styles.container} onClick={(e) => e.stopPropagation()}>
             <h1 className={styles.title}>Авторизация</h1>
-            <X width={20} height={20} className={styles.cross} onClick={() => close()} />
+            <X width={20} height={20} className={styles.cross} onClick={close} />
             <AuthForm />
         </div>
     </div>
