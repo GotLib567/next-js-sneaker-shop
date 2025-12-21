@@ -6,7 +6,7 @@
 - Zustand
 - PostgresSQL (NEON)
 - Drizzle ORM
-- NextAuth
+- NextAuth v5
 - react-hook-forms
 - CSS Modules\
 and more

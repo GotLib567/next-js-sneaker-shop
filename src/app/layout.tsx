@@ -5,6 +5,7 @@ import styles from "./Layout.module.css";
 import { Montserrat } from "next/font/google";
 import Footer from "@/src/widgets/layout/Footer/Footer";
 import AuthModalProvider from "../widgets/auth-modal/ui/AuthModalProvider";
+import { SessionProvider } from "next-auth/react";
 
 const MontserratSans = Montserrat({
   variable: "--font-sans",
@@ -31,18 +32,20 @@ export default function RootLayout({
       <body
         className={`${MontserratSans.variable}`}
       >
-        <Navbar />
+        <SessionProvider>
+          <Navbar />
 
-        <div className={styles.mainContainer}>
-          {children}
-        </div>
+          <div className={styles.mainContainer}>
+            {children}
+          </div>
 
-        <AuthModalProvider />
+          <AuthModalProvider />
 
-        <Footer
-          phone="+7 (999) 999-99-99"
-          email="test@test.com"
-        />
+          <Footer
+            phone="+7 (999) 999-99-99"
+            email="test@test.com"
+          />
+        </SessionProvider>
       </body>
     </html>
   );

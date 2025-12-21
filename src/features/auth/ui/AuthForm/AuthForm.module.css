@@ -18,6 +18,18 @@
     margin-bottom: 10px;
 }
 
+.authMode {
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+    font-size: var(--font-sm);
+}
+
+.changeModeBtn {
+    color: var(--primary);
+    cursor: pointer;
+}
+
 .formBtns {
     margin-top: 20px;
 }
@@ -35,4 +47,8 @@
     color: #fff;
     cursor: pointer;
     background: #18181B;
+}
+
+.errorText {
+    color: red;
 }
