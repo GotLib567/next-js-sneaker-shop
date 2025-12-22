@@ -1,12 +1,12 @@
 "use client";
-import React from 'react';
 import { signOut } from "next-auth/react";
+import styles from "./AccountPage.module.css";
 
 function AccountPage() {
   return (
-    <div style={{ marginTop: 40 }}>
-        <h1>Мой аккаунт</h1>
-        <button onClick={() => signOut({ redirectTo: "/" })} >Выйти</button>
+    <div className={styles.root}>
+        <h1 className={styles.title} >Мой аккаунт</h1>
+        <button className={styles.extBtn} onClick={() => signOut({ redirectTo: "/" })} >Выйти</button>
     </div>
   )
 }
