@@ -30,3 +30,7 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 _*based on [23sneakerstore](https://23sneakerstore.ru/)_
+
+_Educational project.
+Design inspired by public e-commerce website.
+All assets are placeholders. Not affiliated with any brand._
