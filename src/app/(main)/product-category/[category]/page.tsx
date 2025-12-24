@@ -11,7 +11,10 @@ async function ProductCategoryPage({ params }: { params: { category: string } })
     
     return (
         <div className={styles.root}>
-            <h1 className={styles.categoryTitle}>{`товары для ${CATEGORY_TILE_MAP[category]}`.toUpperCase()}</h1>
+            <div className={styles.topContainer}>
+                <h1 className={styles.categoryTitle}>{`товары для ${CATEGORY_TILE_MAP[category]}`.toUpperCase()}</h1>
+                <button className={styles.filtersBtn}>Показать фильтры</button>
+            </div>
             <ProductsList />
         </div>
     )

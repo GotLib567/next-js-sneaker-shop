@@ -3,8 +3,23 @@
 }
 
 .categoryTitle {
-    font-size: var(--font-title);
+    font-size: var(--font-title-xl);
     font-weight: 600;
-    margin: 40px 0;
     text-transform: uppercase;
+}
+
+.topContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.filtersBtn {
+    padding: 15px 30px;
+    font-size: var(--font-md);
+    font-weight: 600;
+    background-color: var(--background);
+    border: 2px solid var(--muted-background);
+    cursor: pointer;
 }
