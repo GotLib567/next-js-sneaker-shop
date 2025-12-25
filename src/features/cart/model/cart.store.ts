@@ -1,17 +1,22 @@
-import { createStore } from "zustand";
+import { create } from "zustand";
 
-type CartStoreState = {
-    productIds: number[],
-    addToCart: (id: number) => void,
-    deleteFromCart: (id: number) => void,
+type ItemStoreEntity = {
+    id: string,
+    size: number,
 }
 
-export const useCartStore = createStore<CartStoreState>((set) => ({
-    productIds: [],
-    addToCart: (id) => set((state) => ({ 
-        productIds: [...state.productIds, id]
+type CartStoreState = {
+    items: ItemStoreEntity[],
+    addToCart: (id: string, size: number) => void,
+    removeFromCart: (id: string) => void,
+}
+
+export const useCartStore = create<CartStoreState>((set) => ({
+    items: [],
+    addToCart: (id, size) => set((state) => ({
+        items: [...state.items, { id, size }]
     })),
-    deleteFromCart: (id) => set((state) => ({
-        productIds: state.productIds.filter((productId) => productId !== id)
+    removeFromCart: (id) => set((state) => ({
+        items: state.items.filter((item) => item.id !== id)
     })),
 }));

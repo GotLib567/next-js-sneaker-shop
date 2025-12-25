@@ -33,18 +33,22 @@ export default function RootLayout({
         className={`${MontserratSans.variable}`}
       >
         <SessionProvider>
-          <Navbar />
+          <div className={styles.page}>
+            <Navbar />
 
-          <div className={styles.mainContainer}>
-            {children}
+            <main className={styles.main}>
+              <div className={styles.container}>
+                {children}
+              </div>
+            </main>
+
+            <AuthModalProvider />
+
+            <Footer
+              phone="+7 (999) 999-99-99"
+              email="test@test.com"
+            />
           </div>
-
-          <AuthModalProvider />
-
-          <Footer
-            phone="+7 (999) 999-99-99"
-            email="test@test.com"
-          />
         </SessionProvider>
       </body>
     </html>
