@@ -2,6 +2,7 @@
 import { useCartStore } from '@/src/features/cart/model/cart.store';
 import styles from './CartPage.module.css';
 import React, { useEffect } from 'react';
+import Link from 'next/link';
 
 function CartPage() {
   const cartItems = useCartStore((state) => state.items);
@@ -14,7 +15,7 @@ function CartPage() {
     return (
       <div className={styles.emptyCart}>
         <span className={styles.title}>В корзине пока нет товаров</span>
-        <button className={styles.catalogBtn}>Перейти в каталог</button>
+        <Link href="/catalog" className={styles.catalogBtn}>Перейти в каталог</Link>
       </div>
     )
   }

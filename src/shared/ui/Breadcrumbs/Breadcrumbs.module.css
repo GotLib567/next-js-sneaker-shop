@@ -1,0 +1,18 @@
+.breadcrumbs {
+  display: flex;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.breadcrumb {
+  display: flex;
+}
+
+.separator {
+  margin: 0 12px;
+  color: var(--muted);
+}
+
+.link {
+  display: inline-block;
+}

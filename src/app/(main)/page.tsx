@@ -8,7 +8,9 @@ export default function Home() {
     <main className={styles.root}>
       <BannerSlider />
       <Discounts />
-      <FrontCatalog />
+      <div className={styles.mtSection}>
+        <FrontCatalog />
+      </div>
     </main>
   );
 }

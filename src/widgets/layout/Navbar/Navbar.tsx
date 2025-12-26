@@ -6,8 +6,8 @@ import { ProfileAction } from "./ProfileAction";
 
 const MENU_ITEMS = [
   { label: "Новинки", href: "/new" },
-  { label: "Мужчинам", href: "/product-category/man" },
-  { label: "Женщинам", href: "/product-category/woman" },
+  { label: "Мужчинам", href: "/catalog/man" },
+  { label: "Женщинам", href: "/catalog/woman" },
   { label: "Бренды", href: "/brands" },
   { label: "Информация", href: "/info" },
 ] as const;
